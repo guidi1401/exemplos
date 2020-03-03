@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html  lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<script> 
+			function escreve_mensagem(valor){
+				mensagem = "Você escreveu '"+valor+"' ";
+				alert(mensagem) ;
+				if(isNaN(valor)){
+					alert(valor + " nao é um numero");
+				}
+				else{
+					alert(valor + " é um numero");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name="f3">
+			<input type="text" name="v" />
+			<input type="button" value="Teste!" onclick="escreve_mensagem(document.f3.v.value);" />
+		</form>
+	</body>
+</html>
